@@ -1,13 +1,20 @@
+import { theme } from "@/theme"
 import { StyleSheet } from "react-native"
-import { theme } from "@/themes/index"
+import { Header } from "react-native/Libraries/NewAppScreen"
 
 export const styles = StyleSheet.create({
     container: {
-        flex:1
+        flex: 1,
     },
+
     header: {
-        width:"100%",
+        width: "100%",
         height: 132,
         backgroundColor: theme.colors.blue,
+        justifyContent: "flex-end",
+        paddingHorizontal: 24,
     },
+    input: {
+        marginBottom: -27,
+    }
 })
